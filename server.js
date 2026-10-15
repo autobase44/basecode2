@@ -15,7 +15,7 @@ const page = `<!doctype html>
 </head>
 <body>
   <main>
-    <h1 data-testid="e2e-marker">Base Code E2E</h1>
+    <h1 data-testid="e2e-marker">Variant A · work session</h1>
     <p>Test fixture for Base44 Base Code end-to-end tests.</p>
   </main>
 </body>
