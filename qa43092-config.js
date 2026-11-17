@@ -1,1 +1,1 @@
-module.exports = { branchChannel: "BASE", mainNote: "BASE" };
+module.exports = { branchChannel: "C3-ON", mainNote: "BASE" };
