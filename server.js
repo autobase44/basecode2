@@ -5,7 +5,8 @@ const config = require('./qa43092-config.js');
 const PORT = Number(process.env.PORT) || 3000;
 
 function renderPage() {
-  const label = config.displayLabelV2 || config.displayLabel;
+  const v2 = config.displayLabelV2;
+  const label = typeof v2 === 'string' ? v2 : config.displayLabel;
   const heading = label.toUpperCase();
 
   return `<!doctype html>
