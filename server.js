@@ -15,7 +15,7 @@ const page = `<!doctype html>
 </head>
 <body>
   <main>
-    <h1 data-testid="e2e-marker">Base Code E2E</h1>
+    <h1 data-testid="e2e-marker">C4-DIRTY-RESUME</h1>
     <p>Test fixture for Base44 Base Code end-to-end tests.</p>
   </main>
 </body>
@@ -28,7 +28,7 @@ http
       res.end('{"status":"ok"}');
       return;
     }
-    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.writeHead(503, { 'Content-Type': 'text/html; charset=utf-8' });
     res.end(page);
   })
   .listen(PORT, () => console.log(`Listening on ${PORT}`)); // no host: binds :: (IPv4+IPv6) so a `localhost` healthcheck works
