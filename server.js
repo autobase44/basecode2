@@ -28,7 +28,7 @@ http
       res.end('{"status":"ok"}');
       return;
     }
-    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
     res.end(page);
   })
   .listen(PORT, () => console.log(`Listening on ${PORT}`)); // no host: binds :: (IPv4+IPv6) so a `localhost` healthcheck works
